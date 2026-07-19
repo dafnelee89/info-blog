@@ -1,0 +1,61 @@
+{
+  "analyzedAt": "2026-07-19T07:00:40.494Z",
+  "mode": "report",
+  "thresholds": {
+    "warn": 61,
+    "block": 81,
+    "minExperience": 30
+  },
+  "counts": {
+    "pass": 2,
+    "warn": 0,
+    "block": 0
+  },
+  "errors": [],
+  "posts": [
+    {
+      "file": "_drafts/2026-07-19-ev-purchase-subsidy-reservation-cancel-refund-reapply.md",
+      "slug": "ev-purchase-subsidy-reservation-cancel-refund-reapply",
+      "title": "전기차 구매 보조금 사전예약 취소 시 환불·재신청 규정 정리",
+      "scores": {
+        "aiUsage": 31,
+        "experience": 63,
+        "specificity": 20,
+        "verification": 68,
+        "originality": 92
+      },
+      "risk": {
+        "massProduction": "low",
+        "publishDecision": "pass"
+      },
+      "findings": [
+        "Specific details are limited: add versions, commands, file paths, numbers, or concrete examples."
+      ],
+      "recommendations": [
+        "Include concrete versions, commands, file names, dates, amounts, or before/after results."
+      ]
+    },
+    {
+      "file": "_drafts/2026-07-19-health-insurance-voluntary-continued-enrollment-after-retirement.md",
+      "slug": "health-insurance-voluntary-continued-enrollment-after-retirement",
+      "title": "퇴직 후 건강보험 임의계속가입: 신청 기한과 필요한 서류 한눈에",
+      "scores": {
+        "aiUsage": 35,
+        "experience": 71,
+        "specificity": 10,
+        "verification": 72,
+        "originality": 92
+      },
+      "risk": {
+        "massProduction": "low",
+        "publishDecision": "pass"
+      },
+      "findings": [
+        "Specific details are limited: add versions, commands, file paths, numbers, or concrete examples."
+      ],
+      "recommendations": [
+        "Include concrete versions, commands, file names, dates, amounts, or before/after results."
+      ]
+    }
+  ]
+}
