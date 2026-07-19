@@ -1,0 +1,168 @@
+theme: jekyll-theme-chirpy
+
+lang: ko-KR
+timezone: Asia/Seoul
+
+title: "Dafne Blog"
+tagline: "일상 및 정보를 기록."
+description: >-
+  일상 및 정보를 기록합니다.
+
+url: "https://info.dafnelee.com"
+baseurl: ""
+
+github:
+  username: dafnelee89
+
+twitter:
+  username:
+
+social:
+  name: dafnelee
+  email: 124589jj@gmail.com
+  links:
+    - https://info.dafnelee.com
+    - https://github.com/dafnelee89
+
+webmaster_verifications:
+  google:
+  bing:
+  alexa:
+  yandex:
+  baidu:
+  facebook:
+
+analytics:
+  google:
+    id:
+  goatcounter:
+    id:
+  umami:
+    id:
+    domain:
+  matomo:
+    id:
+    domain:
+  cloudflare:
+    id:
+  fathom:
+    id:
+
+pageviews:
+  provider:
+
+theme_mode:
+
+cdn:
+
+avatar:
+
+social_preview_image:
+
+toc: true
+
+comments:
+  provider:
+  disqus:
+    comments:
+    shortname:
+  utterances:
+    repo:
+    issue_term:
+  giscus:
+    repo:
+    repo_id:
+    category:
+    category_id:
+    mapping: pathname
+    strict: 0
+    input_position: bottom
+    lang: ko
+    reactions_enabled: 1
+
+assets:
+  self_host:
+    enabled:
+    env:
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
+
+paginate: 10
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: dafnelee
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - docs
+  - prompts
+  - scripts
+  - tools
+  - README.md
+  - package*.json
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
