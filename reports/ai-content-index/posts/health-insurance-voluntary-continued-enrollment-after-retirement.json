@@ -1,0 +1,41 @@
+{
+  "file": "_drafts/2026-07-19-health-insurance-voluntary-continued-enrollment-after-retirement.md",
+  "slug": "health-insurance-voluntary-continued-enrollment-after-retirement",
+  "title": "퇴직 후 건강보험 임의계속가입: 신청 기한과 필요한 서류 한눈에",
+  "analyzedAt": "2026-07-19T07:00:40.491Z",
+  "scores": {
+    "aiUsage": 35,
+    "experience": 71,
+    "specificity": 10,
+    "verification": 72,
+    "originality": 92
+  },
+  "risk": {
+    "massProduction": "low",
+    "publishDecision": "pass"
+  },
+  "metrics": {
+    "wordCount": 1144,
+    "sentenceCount": 69,
+    "headingCount": 15,
+    "codeBlockCount": 0,
+    "linkCount": 0,
+    "versionMentionCount": 0,
+    "filePathMentionCount": 2,
+    "commandCount": 0,
+    "numberWithUnitCount": 0,
+    "errorMessageCount": 0,
+    "genericPhraseCount": 2,
+    "experienceSignalCount": 7,
+    "verificationSignalCount": 6,
+    "maxSimilarity": 0.077,
+    "maxHeadingSimilarity": 0.193,
+    "mostSimilarPost": "ev-purchase-subsidy-reservation-cancel-refund-reapply"
+  },
+  "findings": [
+    "Specific details are limited: add versions, commands, file paths, numbers, or concrete examples."
+  ],
+  "recommendations": [
+    "Include concrete versions, commands, file names, dates, amounts, or before/after results."
+  ]
+}

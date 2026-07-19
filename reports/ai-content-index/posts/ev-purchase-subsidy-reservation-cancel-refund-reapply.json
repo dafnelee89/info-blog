@@ -1,0 +1,41 @@
+{
+  "file": "_drafts/2026-07-19-ev-purchase-subsidy-reservation-cancel-refund-reapply.md",
+  "slug": "ev-purchase-subsidy-reservation-cancel-refund-reapply",
+  "title": "전기차 구매 보조금 사전예약 취소 시 환불·재신청 규정 정리",
+  "analyzedAt": "2026-07-19T07:00:40.488Z",
+  "scores": {
+    "aiUsage": 31,
+    "experience": 63,
+    "specificity": 20,
+    "verification": 68,
+    "originality": 92
+  },
+  "risk": {
+    "massProduction": "low",
+    "publishDecision": "pass"
+  },
+  "metrics": {
+    "wordCount": 1048,
+    "sentenceCount": 49,
+    "headingCount": 14,
+    "codeBlockCount": 0,
+    "linkCount": 2,
+    "versionMentionCount": 0,
+    "filePathMentionCount": 4,
+    "commandCount": 0,
+    "numberWithUnitCount": 0,
+    "errorMessageCount": 0,
+    "genericPhraseCount": 0,
+    "experienceSignalCount": 6,
+    "verificationSignalCount": 4,
+    "maxSimilarity": 0.077,
+    "maxHeadingSimilarity": 0.193,
+    "mostSimilarPost": "health-insurance-voluntary-continued-enrollment-after-retirement"
+  },
+  "findings": [
+    "Specific details are limited: add versions, commands, file paths, numbers, or concrete examples."
+  ],
+  "recommendations": [
+    "Include concrete versions, commands, file names, dates, amounts, or before/after results."
+  ]
+}
