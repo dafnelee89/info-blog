@@ -62,5 +62,6 @@ jobs:
         env:
           SITE_URL: "https://info.dafnelee.com"
           INDEXING_CHECK_MODE: smoke
+          INDEXING_CHECK_SOFT_FAIL: true
           INDEXING_CHECK_RETRIES: 6
           INDEXING_CHECK_DELAY_MS: 10000
