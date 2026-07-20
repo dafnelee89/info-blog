@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "description": "Chirpy-based Jekyll blog skeleton.",
   "scripts": {
-    "dev": "bundle exec jekyll serve --host 127.0.0.1 --port 4101 --force_polling",
-    "build": "npm run build:css && bundle exec jekyll build",
+    "dev": "rbenv exec bundle exec jekyll serve --host 127.0.0.1 --port 4101 --force_polling",
+    "build": "npm run build:css && rbenv exec bundle exec jekyll build",
     "build:css": "purgecss -c purgecss.config.js",
-    "clean": "bundle exec jekyll clean",
+    "clean": "rbenv exec bundle exec jekyll clean",
     "analyze:ai-content": "node scripts/ai-content-index/index.mjs",
     "verify:indexing": "node scripts/verify-indexing-readiness.mjs"
   },

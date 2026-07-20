@@ -55,9 +55,9 @@ theme_mode:
 
 cdn:
 
-avatar:
+avatar: "/assets/img/sites/avatar.webp"
 
-social_preview_image:
+social_preview_image: "/assets/img/sites/avatar.webp"
 
 toc: true
 
@@ -151,12 +151,17 @@ compress_html:
     envs: [development]
 
 exclude:
+  - "*.gem"
+  - "*.gemspec"
   - docs
   - prompts
   - scripts
   - tools
   - README.md
+  - LICENSE
+  - "*.config.js"
   - package*.json
+  - "로컬 개발환경.md"
 
 jekyll-archives:
   enabled: [categories, tags]
