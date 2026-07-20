@@ -8,25 +8,25 @@
 
 ## Posts
 
-### PASS 전기차 구매 보조금 사전예약 취소 시 환불·재신청 규정 정리
+### PASS 통관 지연으로 해외직구가 장기간 통관중일 때 환불·반송 신청 방법 정리
 
-- File: `_drafts/2026-07-19-ev-purchase-subsidy-reservation-cancel-refund-reapply.md`
-- AI Usage: 31
-- Experience: 63
-- Specificity: 20
-- Verification: 68
+- File: `_drafts/2026-07-20-overseas-purchase-clearance-delay-refund-return-procedure.md`
+- AI Usage: 38
+- Experience: 31
+- Specificity: 10
+- Verification: 100
 - Originality: 92
 
 - Specific details are limited: add versions, commands, file paths, numbers, or concrete examples.
 
-### PASS 퇴직 후 건강보험 임의계속가입: 신청 기한과 필요한 서류 한눈에
+### PASS 소상공인 정책자금 기준 변경 시 이미 받은 대출은 어떻게 달라지나 — 확인 방법 총정리
 
-- File: `_drafts/2026-07-19-health-insurance-voluntary-continued-enrollment-after-retirement.md`
+- File: `_drafts/2026-07-20-small-business-policy-loan-condition-change-check.md`
 - AI Usage: 35
-- Experience: 71
+- Experience: 55
 - Specificity: 10
-- Verification: 72
-- Originality: 92
+- Verification: 68
+- Originality: 93
 
 - Specific details are limited: add versions, commands, file paths, numbers, or concrete examples.
 

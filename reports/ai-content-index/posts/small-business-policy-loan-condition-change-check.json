@@ -1,0 +1,42 @@
+{
+  "file": "_drafts/2026-07-20-small-business-policy-loan-condition-change-check.md",
+  "slug": "small-business-policy-loan-condition-change-check",
+  "title": "소상공인 정책자금 기준 변경 시 이미 받은 대출은 어떻게 달라지나 — 확인 방법 총정리",
+  "analyzedAt": "2026-07-20T11:13:34.733Z",
+  "scores": {
+    "aiUsage": 35,
+    "experience": 55,
+    "specificity": 10,
+    "verification": 68,
+    "originality": 93
+  },
+  "risk": {
+    "massProduction": "low",
+    "publishDecision": "pass"
+  },
+  "metrics": {
+    "wordCount": 1029,
+    "sentenceCount": 87,
+    "headingCount": 15,
+    "codeBlockCount": 0,
+    "linkCount": 2,
+    "versionMentionCount": 0,
+    "filePathMentionCount": 2,
+    "commandCount": 0,
+    "numberWithUnitCount": 0,
+    "errorMessageCount": 0,
+    "genericPhraseCount": 0,
+    "experienceSignalCount": 5,
+    "verificationSignalCount": 4,
+    "maxSimilarity": 0.074,
+    "maxHeadingSimilarity": 0.203,
+    "mostSimilarPost": "ev-purchase-subsidy-reservation-cancel-refund-reapply"
+  },
+  "findings": [
+    "Specific details are limited: add versions, commands, file paths, numbers, or concrete examples."
+  ],
+  "recommendations": [
+    "Add a short first-person review section with the actual environment, what failed first, and what changed after fixing it.",
+    "Include concrete versions, commands, file names, dates, amounts, or before/after results."
+  ]
+}
