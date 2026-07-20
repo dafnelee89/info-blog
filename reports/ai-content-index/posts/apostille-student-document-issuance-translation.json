@@ -1,0 +1,42 @@
+{
+  "file": "_drafts/2026-07-20-apostille-student-document-issuance-translation.md",
+  "slug": "apostille-student-document-issuance-translation",
+  "title": "해외 유학용 졸업증명서 아포스티유와 번역공증 준비 가이드",
+  "analyzedAt": "2026-07-20T11:28:00.758Z",
+  "scores": {
+    "aiUsage": 36,
+    "experience": 39,
+    "specificity": 10,
+    "verification": 100,
+    "originality": 93
+  },
+  "risk": {
+    "massProduction": "low",
+    "publishDecision": "pass"
+  },
+  "metrics": {
+    "wordCount": 984,
+    "sentenceCount": 84,
+    "headingCount": 16,
+    "codeBlockCount": 0,
+    "linkCount": 2,
+    "versionMentionCount": 0,
+    "filePathMentionCount": 2,
+    "commandCount": 0,
+    "numberWithUnitCount": 0,
+    "errorMessageCount": 0,
+    "genericPhraseCount": 0,
+    "experienceSignalCount": 3,
+    "verificationSignalCount": 17,
+    "maxSimilarity": 0.067,
+    "maxHeadingSimilarity": 0.147,
+    "mostSimilarPost": "health-insurance-voluntary-continued-enrollment-after-retirement"
+  },
+  "findings": [
+    "Specific details are limited: add versions, commands, file paths, numbers, or concrete examples."
+  ],
+  "recommendations": [
+    "Add a short first-person review section with the actual environment, what failed first, and what changed after fixing it.",
+    "Include concrete versions, commands, file names, dates, amounts, or before/after results."
+  ]
+}

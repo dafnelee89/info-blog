@@ -4,20 +4,20 @@
 - Result: pass=2, warn=0, block=0
 - Full report: `reports/ai-content-index/summary.md`
 
-#### PASS 통관 지연으로 해외직구가 장기간 통관중일 때 환불·반송 신청 방법 정리
+#### PASS 해외 유학용 졸업증명서 아포스티유와 번역공증 준비 가이드
 
 | Score | Value |
 | --- | ---: |
-| AI Usage | 38 |
-| Experience | 31 |
+| AI Usage | 36 |
+| Experience | 39 |
 | Specificity | 10 |
 | Verification | 100 |
-| Originality | 92 |
+| Originality | 93 |
 
 - Add a short first-person review section with the actual environment, what failed first, and what changed after fixing it.
 - Include concrete versions, commands, file names, dates, amounts, or before/after results.
 
-#### PASS 소상공인 정책자금 기준 변경 시 이미 받은 대출은 어떻게 달라지나 — 확인 방법 총정리
+#### PASS 상속등기 지연 시 과태료와 신속등기 절차: 무엇을 먼저 확인해야 할까
 
 | Score | Value |
 | --- | ---: |
@@ -25,7 +25,7 @@
 | Experience | 55 |
 | Specificity | 10 |
 | Verification | 68 |
-| Originality | 93 |
+| Originality | 92 |
 
 - Add a short first-person review section with the actual environment, what failed first, and what changed after fixing it.
 - Include concrete versions, commands, file names, dates, amounts, or before/after results.
