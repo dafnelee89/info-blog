@@ -8,25 +8,25 @@
 
 ## Posts
 
-### PASS 통관 지연으로 해외직구가 장기간 통관중일 때 환불·반송 신청 방법 정리
+### PASS 해외 유학용 졸업증명서 아포스티유와 번역공증 준비 가이드
 
-- File: `_drafts/2026-07-20-overseas-purchase-clearance-delay-refund-return-procedure.md`
-- AI Usage: 38
-- Experience: 31
+- File: `_drafts/2026-07-20-apostille-student-document-issuance-translation.md`
+- AI Usage: 36
+- Experience: 39
 - Specificity: 10
 - Verification: 100
-- Originality: 92
+- Originality: 93
 
 - Specific details are limited: add versions, commands, file paths, numbers, or concrete examples.
 
-### PASS 소상공인 정책자금 기준 변경 시 이미 받은 대출은 어떻게 달라지나 — 확인 방법 총정리
+### PASS 상속등기 지연 시 과태료와 신속등기 절차: 무엇을 먼저 확인해야 할까
 
-- File: `_drafts/2026-07-20-small-business-policy-loan-condition-change-check.md`
+- File: `_drafts/2026-07-20-inheritance-registration-delay-penalty-urgent-transfer.md`
 - AI Usage: 35
 - Experience: 55
 - Specificity: 10
 - Verification: 68
-- Originality: 93
+- Originality: 92
 
 - Specific details are limited: add versions, commands, file paths, numbers, or concrete examples.
 

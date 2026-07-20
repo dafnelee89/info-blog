@@ -1,5 +1,5 @@
 {
-  "analyzedAt": "2026-07-20T11:13:34.736Z",
+  "analyzedAt": "2026-07-20T11:28:00.767Z",
   "mode": "report",
   "thresholds": {
     "warn": 61,
@@ -14,15 +14,15 @@
   "errors": [],
   "posts": [
     {
-      "file": "_drafts/2026-07-20-overseas-purchase-clearance-delay-refund-return-procedure.md",
-      "slug": "overseas-purchase-clearance-delay-refund-return-procedure",
-      "title": "통관 지연으로 해외직구가 장기간 통관중일 때 환불·반송 신청 방법 정리",
+      "file": "_drafts/2026-07-20-apostille-student-document-issuance-translation.md",
+      "slug": "apostille-student-document-issuance-translation",
+      "title": "해외 유학용 졸업증명서 아포스티유와 번역공증 준비 가이드",
       "scores": {
-        "aiUsage": 38,
-        "experience": 31,
+        "aiUsage": 36,
+        "experience": 39,
         "specificity": 10,
         "verification": 100,
-        "originality": 92
+        "originality": 93
       },
       "risk": {
         "massProduction": "low",
@@ -37,15 +37,15 @@
       ]
     },
     {
-      "file": "_drafts/2026-07-20-small-business-policy-loan-condition-change-check.md",
-      "slug": "small-business-policy-loan-condition-change-check",
-      "title": "소상공인 정책자금 기준 변경 시 이미 받은 대출은 어떻게 달라지나 — 확인 방법 총정리",
+      "file": "_drafts/2026-07-20-inheritance-registration-delay-penalty-urgent-transfer.md",
+      "slug": "inheritance-registration-delay-penalty-urgent-transfer",
+      "title": "상속등기 지연 시 과태료와 신속등기 절차: 무엇을 먼저 확인해야 할까",
       "scores": {
         "aiUsage": 35,
         "experience": 55,
         "specificity": 10,
         "verification": 68,
-        "originality": 93
+        "originality": 92
       },
       "risk": {
         "massProduction": "low",
