@@ -1,5 +1,5 @@
 {
-  "analyzedAt": "2026-07-20T11:28:00.767Z",
+  "analyzedAt": "2026-07-21T00:58:02.121Z",
   "mode": "report",
   "thresholds": {
     "warn": 61,
@@ -7,22 +7,22 @@
     "minExperience": 30
   },
   "counts": {
-    "pass": 2,
+    "pass": 4,
     "warn": 0,
     "block": 0
   },
   "errors": [],
   "posts": [
     {
-      "file": "_drafts/2026-07-20-apostille-student-document-issuance-translation.md",
-      "slug": "apostille-student-document-issuance-translation",
-      "title": "해외 유학용 졸업증명서 아포스티유와 번역공증 준비 가이드",
+      "file": "_drafts/2026-07-21-joint-inherited-property-tax-report-sharing.md",
+      "slug": "joint-inherited-property-tax-report-sharing",
+      "title": "공동명의로 상속받은 주택의 취득세·양도세 신고와 부담 비율 정하는 방법",
       "scores": {
-        "aiUsage": 36,
+        "aiUsage": 38,
         "experience": 39,
         "specificity": 10,
-        "verification": 100,
-        "originality": 93
+        "verification": 80,
+        "originality": 91
       },
       "risk": {
         "massProduction": "low",
@@ -37,15 +37,59 @@
       ]
     },
     {
-      "file": "_drafts/2026-07-20-inheritance-registration-delay-penalty-urgent-transfer.md",
-      "slug": "inheritance-registration-delay-penalty-urgent-transfer",
-      "title": "상속등기 지연 시 과태료와 신속등기 절차: 무엇을 먼저 확인해야 할까",
+      "file": "_drafts/2026-07-21-online-course-refund-before-after-start.md",
+      "slug": "online-course-refund-before-after-start",
+      "title": "온라인 강의 수강료 환불: 강의 시작 전과 시작 후 차이와 지금 확인할 3가지",
       "scores": {
-        "aiUsage": 35,
+        "aiUsage": 27,
+        "experience": 100,
+        "specificity": 10,
+        "verification": 80,
+        "originality": 91
+      },
+      "risk": {
+        "massProduction": "low",
+        "publishDecision": "pass"
+      },
+      "findings": [
+        "Specific details are limited: add versions, commands, file paths, numbers, or concrete examples."
+      ],
+      "recommendations": [
+        "Include concrete versions, commands, file names, dates, amounts, or before/after results."
+      ]
+    },
+    {
+      "file": "_drafts/2026-07-21-rental-car-deductible-subrogation-liability.md",
+      "slug": "rental-car-deductible-subrogation-liability",
+      "title": "렌터카 사고 시 자기부담금과 보험 구상금은 누가 언제 청구하나요?",
+      "scores": {
+        "aiUsage": 32,
+        "experience": 63,
+        "specificity": 15,
+        "verification": 68,
+        "originality": 93
+      },
+      "risk": {
+        "massProduction": "low",
+        "publishDecision": "pass"
+      },
+      "findings": [
+        "Specific details are limited: add versions, commands, file paths, numbers, or concrete examples."
+      ],
+      "recommendations": [
+        "Include concrete versions, commands, file names, dates, amounts, or before/after results."
+      ]
+    },
+    {
+      "file": "_drafts/2026-07-21-school-academy-closure-refund-tuition-evidence.md",
+      "slug": "school-academy-closure-refund-tuition-evidence",
+      "title": "학교·학원 휴원·폐원 시 이미 낸 수강료 환불 기준과 증빙 정리",
+      "scores": {
+        "aiUsage": 38,
         "experience": 55,
         "specificity": 10,
-        "verification": 68,
-        "originality": 92
+        "verification": 80,
+        "originality": 91
       },
       "risk": {
         "massProduction": "low",
