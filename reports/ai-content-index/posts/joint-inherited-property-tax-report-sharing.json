@@ -1,0 +1,42 @@
+{
+  "file": "_drafts/2026-07-21-joint-inherited-property-tax-report-sharing.md",
+  "slug": "joint-inherited-property-tax-report-sharing",
+  "title": "공동명의로 상속받은 주택의 취득세·양도세 신고와 부담 비율 정하는 방법",
+  "analyzedAt": "2026-07-21T00:58:02.091Z",
+  "scores": {
+    "aiUsage": 38,
+    "experience": 39,
+    "specificity": 10,
+    "verification": 80,
+    "originality": 91
+  },
+  "risk": {
+    "massProduction": "low",
+    "publishDecision": "pass"
+  },
+  "metrics": {
+    "wordCount": 1056,
+    "sentenceCount": 63,
+    "headingCount": 15,
+    "codeBlockCount": 0,
+    "linkCount": 2,
+    "versionMentionCount": 0,
+    "filePathMentionCount": 2,
+    "commandCount": 0,
+    "numberWithUnitCount": 0,
+    "errorMessageCount": 0,
+    "genericPhraseCount": 0,
+    "experienceSignalCount": 3,
+    "verificationSignalCount": 5,
+    "maxSimilarity": 0.094,
+    "maxHeadingSimilarity": 0.2,
+    "mostSimilarPost": "inheritance-registration-delay-penalty-urgent-transfer"
+  },
+  "findings": [
+    "Specific details are limited: add versions, commands, file paths, numbers, or concrete examples."
+  ],
+  "recommendations": [
+    "Add a short first-person review section with the actual environment, what failed first, and what changed after fixing it.",
+    "Include concrete versions, commands, file names, dates, amounts, or before/after results."
+  ]
+}

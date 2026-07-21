@@ -1,0 +1,41 @@
+{
+  "file": "_drafts/2026-07-21-rental-car-deductible-subrogation-liability.md",
+  "slug": "rental-car-deductible-subrogation-liability",
+  "title": "렌터카 사고 시 자기부담금과 보험 구상금은 누가 언제 청구하나요?",
+  "analyzedAt": "2026-07-21T00:58:02.110Z",
+  "scores": {
+    "aiUsage": 32,
+    "experience": 63,
+    "specificity": 15,
+    "verification": 68,
+    "originality": 93
+  },
+  "risk": {
+    "massProduction": "low",
+    "publishDecision": "pass"
+  },
+  "metrics": {
+    "wordCount": 1110,
+    "sentenceCount": 65,
+    "headingCount": 17,
+    "codeBlockCount": 0,
+    "linkCount": 2,
+    "versionMentionCount": 0,
+    "filePathMentionCount": 3,
+    "commandCount": 0,
+    "numberWithUnitCount": 0,
+    "errorMessageCount": 0,
+    "genericPhraseCount": 0,
+    "experienceSignalCount": 6,
+    "verificationSignalCount": 4,
+    "maxSimilarity": 0.067,
+    "maxHeadingSimilarity": 0.2,
+    "mostSimilarPost": "overseas-purchase-clearance-delay-refund-return-procedure"
+  },
+  "findings": [
+    "Specific details are limited: add versions, commands, file paths, numbers, or concrete examples."
+  ],
+  "recommendations": [
+    "Include concrete versions, commands, file names, dates, amounts, or before/after results."
+  ]
+}

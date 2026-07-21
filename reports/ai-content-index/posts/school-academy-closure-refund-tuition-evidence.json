@@ -1,0 +1,42 @@
+{
+  "file": "_drafts/2026-07-21-school-academy-closure-refund-tuition-evidence.md",
+  "slug": "school-academy-closure-refund-tuition-evidence",
+  "title": "학교·학원 휴원·폐원 시 이미 낸 수강료 환불 기준과 증빙 정리",
+  "analyzedAt": "2026-07-21T00:58:02.118Z",
+  "scores": {
+    "aiUsage": 38,
+    "experience": 55,
+    "specificity": 10,
+    "verification": 80,
+    "originality": 91
+  },
+  "risk": {
+    "massProduction": "low",
+    "publishDecision": "pass"
+  },
+  "metrics": {
+    "wordCount": 1025,
+    "sentenceCount": 64,
+    "headingCount": 2,
+    "codeBlockCount": 0,
+    "linkCount": 2,
+    "versionMentionCount": 0,
+    "filePathMentionCount": 2,
+    "commandCount": 0,
+    "numberWithUnitCount": 0,
+    "errorMessageCount": 0,
+    "genericPhraseCount": 0,
+    "experienceSignalCount": 5,
+    "verificationSignalCount": 5,
+    "maxSimilarity": 0.089,
+    "maxHeadingSimilarity": 0.5,
+    "mostSimilarPost": "online-course-refund-before-after-start"
+  },
+  "findings": [
+    "Specific details are limited: add versions, commands, file paths, numbers, or concrete examples."
+  ],
+  "recommendations": [
+    "Add a short first-person review section with the actual environment, what failed first, and what changed after fixing it.",
+    "Include concrete versions, commands, file names, dates, amounts, or before/after results."
+  ]
+}

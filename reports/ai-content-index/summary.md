@@ -1,32 +1,54 @@
 # AI Content Index Summary
 
 - Mode: report
-- Analyzed posts: 2
-- PASS: 2
+- Analyzed posts: 4
+- PASS: 4
 - WARN: 0
 - BLOCK: 0
 
 ## Posts
 
-### PASS 해외 유학용 졸업증명서 아포스티유와 번역공증 준비 가이드
+### PASS 공동명의로 상속받은 주택의 취득세·양도세 신고와 부담 비율 정하는 방법
 
-- File: `_drafts/2026-07-20-apostille-student-document-issuance-translation.md`
-- AI Usage: 36
+- File: `_drafts/2026-07-21-joint-inherited-property-tax-report-sharing.md`
+- AI Usage: 38
 - Experience: 39
 - Specificity: 10
-- Verification: 100
+- Verification: 80
+- Originality: 91
+
+- Specific details are limited: add versions, commands, file paths, numbers, or concrete examples.
+
+### PASS 온라인 강의 수강료 환불: 강의 시작 전과 시작 후 차이와 지금 확인할 3가지
+
+- File: `_drafts/2026-07-21-online-course-refund-before-after-start.md`
+- AI Usage: 27
+- Experience: 100
+- Specificity: 10
+- Verification: 80
+- Originality: 91
+
+- Specific details are limited: add versions, commands, file paths, numbers, or concrete examples.
+
+### PASS 렌터카 사고 시 자기부담금과 보험 구상금은 누가 언제 청구하나요?
+
+- File: `_drafts/2026-07-21-rental-car-deductible-subrogation-liability.md`
+- AI Usage: 32
+- Experience: 63
+- Specificity: 15
+- Verification: 68
 - Originality: 93
 
 - Specific details are limited: add versions, commands, file paths, numbers, or concrete examples.
 
-### PASS 상속등기 지연 시 과태료와 신속등기 절차: 무엇을 먼저 확인해야 할까
+### PASS 학교·학원 휴원·폐원 시 이미 낸 수강료 환불 기준과 증빙 정리
 
-- File: `_drafts/2026-07-20-inheritance-registration-delay-penalty-urgent-transfer.md`
-- AI Usage: 35
+- File: `_drafts/2026-07-21-school-academy-closure-refund-tuition-evidence.md`
+- AI Usage: 38
 - Experience: 55
 - Specificity: 10
-- Verification: 68
-- Originality: 92
+- Verification: 80
+- Originality: 91
 
 - Specific details are limited: add versions, commands, file paths, numbers, or concrete examples.
 
