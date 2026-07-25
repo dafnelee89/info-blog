@@ -14,8 +14,9 @@
   },
   "homepage": "https://github.com/cotes2020/jekyll-theme-chirpy/",
   "scripts": {
-    "dev": "node ../scripts/dev-site.mjs info-blog",
-    "dev:prod": "node ../scripts/dev-site.mjs info-blog --prod",
+    "bundle:install": "node scripts/jekyll-serve.mjs --install-only",
+    "dev": "node scripts/jekyll-serve.mjs",
+    "dev:prod": "node scripts/jekyll-serve.mjs --prod",
     "build": "concurrently npm:build:*",
     "build:css": "purgecss -c purgecss.config.js",
     "build:js": "rollup -c --bundleConfigAsCjs --environment BUILD:production",
