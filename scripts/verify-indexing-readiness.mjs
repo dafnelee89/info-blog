@@ -1,4 +1,4 @@
-const defaultSiteUrl = "https://example.com";
+const defaultSiteUrl = "https://info.dafnelee.com";
 const siteUrl = normalizeUrl(process.env.SITE_URL || defaultSiteUrl);
 const sitemapUrl = new URL(process.env.SITEMAP_PATH || "/sitemap.xml", siteUrl).href;
 const robotsUrl = new URL(process.env.ROBOTS_PATH || "/robots.txt", siteUrl).href;
@@ -7,7 +7,6 @@ const retries = parseIntegerEnv("INDEXING_CHECK_RETRIES", 6);
 const delayMs = parseIntegerEnv("INDEXING_CHECK_DELAY_MS", 10000);
 const timeoutMs = parseIntegerEnv("INDEXING_CHECK_TIMEOUT_MS", 15000);
 const checkMode = (process.env.INDEXING_CHECK_MODE || "smoke").toLowerCase();
-const softFail = parseBooleanEnv("INDEXING_CHECK_SOFT_FAIL", false);
 const changedDays = parseIntegerEnv("INDEXING_CHECK_CHANGED_DAYS", 14);
 const explicitPostLimit = process.env.INDEXING_CHECK_POST_LIMIT
   ? parseIntegerEnv("INDEXING_CHECK_POST_LIMIT", 0)
@@ -240,7 +239,7 @@ async function fetchTextWithRetry(url, label) {
     }
   }
 
-  throw new ReadinessFetchError(label, url, lastError);
+  throw lastError;
 }
 
 async function fetchWithTimeout(url) {
@@ -251,7 +250,7 @@ async function fetchWithTimeout(url) {
     return await fetch(url, {
       headers: {
         "Cache-Control": "no-cache",
-        "User-Agent": "henjini-blog-indexing-readiness/2.0"
+        "User-Agent": "dafnelee-info-indexing-readiness/2.0"
       },
       signal: controller.signal
     });
@@ -382,16 +381,6 @@ function parseIntegerEnv(name, fallback) {
   return Number.isFinite(parsed) ? parsed : fallback;
 }
 
-function parseBooleanEnv(name, fallback) {
-  const value = process.env[name];
-
-  if (value === undefined) {
-    return fallback;
-  }
-
-  return ["1", "true", "yes", "on"].includes(value.toLowerCase());
-}
-
 function defaultPostLimit(mode) {
   if (mode === "full") {
     return 0;
@@ -458,28 +447,7 @@ async function writeStepSummary(title) {
   await appendFile(process.env.GITHUB_STEP_SUMMARY, lines.join("\n"));
 }
 
-class ReadinessFetchError extends Error {
-  constructor(label, url, cause) {
-    super(`${label} could not be fetched from ${url}: ${cause.message}`);
-    this.name = "ReadinessFetchError";
-    this.cause = cause;
-  }
-}
-
 main().catch(async (error) => {
-  if (softFail && error instanceof ReadinessFetchError) {
-    warnings.push(error.message);
-    printResults("Indexing readiness check skipped");
-
-    try {
-      await writeStepSummary("Indexing readiness check skipped");
-    } catch {
-      // Ignore summary write failures so the original warning remains clear.
-    }
-
-    process.exit(0);
-  }
-
   console.error(error.message);
 
   try {
