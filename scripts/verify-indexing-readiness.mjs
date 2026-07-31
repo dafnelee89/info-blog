@@ -1,4 +1,4 @@
-const defaultSiteUrl = "https://info.dafnelee.com";
+const defaultSiteUrl = "https://dafnelee.com";
 const siteUrl = normalizeUrl(process.env.SITE_URL || defaultSiteUrl);
 const sitemapUrl = new URL(process.env.SITEMAP_PATH || "/sitemap.xml", siteUrl).href;
 const robotsUrl = new URL(process.env.ROBOTS_PATH || "/robots.txt", siteUrl).href;

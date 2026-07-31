@@ -15,5 +15,5 @@ order: 4
 
 ## Links
 
-- [info.dafnelee.com](https://info.dafnelee.com)
+- [dafnelee.com](https://dafnelee.com)
 - [GitHub](https://github.com/dafnelee89)

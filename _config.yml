@@ -8,7 +8,7 @@ tagline: "일상 및 정보를 기록."
 description: >-
   일상 및 정보를 기록합니다.
 
-url: "https://info.dafnelee.com"
+url: "https://dafnelee.com"
 baseurl: ""
 
 github:
@@ -21,7 +21,7 @@ social:
   name: dafnelee
   email: 124589jj@gmail.com
   links:
-    - https://info.dafnelee.com
+    - https://dafnelee.com
     - https://github.com/dafnelee89
 
 webmaster_verifications:
