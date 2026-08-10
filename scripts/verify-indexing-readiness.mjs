@@ -1,7 +1,9 @@
-const defaultSiteUrl = "https://dafnelee.com";
+const defaultSiteUrl = "https://info.dafnelee.com";
 const siteUrl = normalizeUrl(process.env.SITE_URL || defaultSiteUrl);
-const sitemapUrl = new URL(process.env.SITEMAP_PATH || "/sitemap.xml", siteUrl).href;
-const robotsUrl = new URL(process.env.ROBOTS_PATH || "/robots.txt", siteUrl).href;
+const sitemapUrl = new URL(process.env.SITEMAP_PATH || "/sitemap.xml", siteUrl)
+  .href;
+const robotsUrl = new URL(process.env.ROBOTS_PATH || "/robots.txt", siteUrl)
+  .href;
 const feedUrl = new URL(process.env.FEED_PATH || "/feed.xml", siteUrl).href;
 const retries = parseIntegerEnv("INDEXING_CHECK_RETRIES", 6);
 const delayMs = parseIntegerEnv("INDEXING_CHECK_DELAY_MS", 10000);
@@ -12,7 +14,10 @@ const explicitPostLimit = process.env.INDEXING_CHECK_POST_LIMIT
   ? parseIntegerEnv("INDEXING_CHECK_POST_LIMIT", 0)
   : null;
 const postLimit = explicitPostLimit ?? defaultPostLimit(checkMode);
-const feedPostCrossCheckLimit = parseIntegerEnv("INDEXING_CHECK_FEED_POST_LIMIT", 10);
+const feedPostCrossCheckLimit = parseIntegerEnv(
+  "INDEXING_CHECK_FEED_POST_LIMIT",
+  10
+);
 const maxSummaryItems = parseIntegerEnv("INDEXING_CHECK_MAX_SUMMARY_ITEMS", 12);
 
 const results = [];
@@ -21,14 +26,24 @@ const failures = [];
 
 async function main() {
   const robots = await fetchTextWithRetry(robotsUrl, "robots.txt");
-  assertIncludes(robots.text, "Sitemap:", "robots.txt must expose a Sitemap directive");
-  assertIncludes(robots.text, sitemapUrl, `robots.txt must expose ${sitemapUrl}`);
+  assertIncludes(
+    robots.text,
+    "Sitemap:",
+    "robots.txt must expose a Sitemap directive"
+  );
+  assertIncludes(
+    robots.text,
+    sitemapUrl,
+    `robots.txt must expose ${sitemapUrl}`
+  );
 
   const sitemap = await fetchTextWithRetry(sitemapUrl, "sitemap.xml");
   const sitemapEntries = extractSitemapEntries(sitemap.text);
   validateSitemapEntries(sitemapEntries);
 
-  const ownSitemapEntries = sitemapEntries.filter((entry) => entry.isSameOrigin);
+  const ownSitemapEntries = sitemapEntries.filter(
+    (entry) => entry.isSameOrigin
+  );
   const sitemapUrls = ownSitemapEntries.map((entry) => entry.loc);
 
   if (sitemapUrls.length === 0) {
@@ -41,7 +56,9 @@ async function main() {
 
   const postEntries = ownSitemapEntries
     .filter((entry) => entry.pathname.includes("/posts/"))
-    .sort((a, b) => b.lastmodTime - a.lastmodTime || a.loc.localeCompare(b.loc));
+    .sort(
+      (a, b) => b.lastmodTime - a.lastmodTime || a.loc.localeCompare(b.loc)
+    );
 
   validatePostSitemapEntries(postEntries);
 
@@ -106,15 +123,21 @@ function validateSitemapEntries(entries) {
   }
 
   if (duplicates.size > 0) {
-    failures.push(`sitemap.xml contains duplicate URLs: ${formatList([...duplicates])}`);
+    failures.push(
+      `sitemap.xml contains duplicate URLs: ${formatList([...duplicates])}`
+    );
   }
 
   if (externalUrls.length > 0) {
-    failures.push(`sitemap.xml contains URLs outside ${siteUrl}: ${formatList(externalUrls)}`);
+    failures.push(
+      `sitemap.xml contains URLs outside ${siteUrl}: ${formatList(externalUrls)}`
+    );
   }
 
   if (invalidUrls.length > 0) {
-    failures.push(`sitemap.xml contains invalid URLs: ${formatList(invalidUrls)}`);
+    failures.push(
+      `sitemap.xml contains invalid URLs: ${formatList(invalidUrls)}`
+    );
   }
 }
 
@@ -125,14 +148,20 @@ function validatePostSitemapEntries(postEntries) {
   }
 
   const missingLastmod = postEntries.filter((entry) => !entry.lastmodRaw);
-  const invalidLastmod = postEntries.filter((entry) => entry.lastmodRaw && entry.lastmodTime === 0);
+  const invalidLastmod = postEntries.filter(
+    (entry) => entry.lastmodRaw && entry.lastmodTime === 0
+  );
 
   if (missingLastmod.length > 0) {
-    warnings.push(`post URLs without <lastmod>: ${formatList(missingLastmod.map((entry) => entry.loc))}`);
+    warnings.push(
+      `post URLs without <lastmod>: ${formatList(missingLastmod.map((entry) => entry.loc))}`
+    );
   }
 
   if (invalidLastmod.length > 0) {
-    warnings.push(`post URLs with invalid <lastmod>: ${formatList(invalidLastmod.map((entry) => entry.loc))}`);
+    warnings.push(
+      `post URLs with invalid <lastmod>: ${formatList(invalidLastmod.map((entry) => entry.loc))}`
+    );
   }
 }
 
@@ -143,11 +172,17 @@ function validateFeedCoverage(feedPostUrls, postEntries) {
   }
 
   const feedSet = new Set(feedPostUrls.map(normalizeUrl));
-  const latestPostUrls = postEntries.slice(0, feedPostCrossCheckLimit).map((entry) => entry.loc);
-  const missingFromFeed = latestPostUrls.filter((url) => !feedSet.has(normalizeUrl(url)));
+  const latestPostUrls = postEntries
+    .slice(0, feedPostCrossCheckLimit)
+    .map((entry) => entry.loc);
+  const missingFromFeed = latestPostUrls.filter(
+    (url) => !feedSet.has(normalizeUrl(url))
+  );
 
   if (missingFromFeed.length > 0) {
-    warnings.push(`latest sitemap posts missing from feed.xml: ${formatList(missingFromFeed)}`);
+    warnings.push(
+      `latest sitemap posts missing from feed.xml: ${formatList(missingFromFeed)}`
+    );
   }
 }
 
@@ -194,18 +229,24 @@ function selectPostEntries(postEntries) {
 
   if (checkMode === "changed") {
     const changedSince = Date.now() - changedDays * 24 * 60 * 60 * 1000;
-    const changedEntries = postEntries.filter((entry) => entry.lastmodTime >= changedSince);
+    const changedEntries = postEntries.filter(
+      (entry) => entry.lastmodTime >= changedSince
+    );
 
     if (changedEntries.length > 0) {
       return changedEntries.slice(0, postLimit);
     }
 
-    warnings.push(`no posts changed in the last ${changedDays} days; falling back to latest posts`);
+    warnings.push(
+      `no posts changed in the last ${changedDays} days; falling back to latest posts`
+    );
     return postEntries.slice(0, postLimit);
   }
 
   if (checkMode !== "smoke") {
-    warnings.push(`unknown INDEXING_CHECK_MODE "${checkMode}"; falling back to smoke`);
+    warnings.push(
+      `unknown INDEXING_CHECK_MODE "${checkMode}"; falling back to smoke`
+    );
   }
 
   return postEntries.slice(0, postLimit);
@@ -233,7 +274,9 @@ async function fetchTextWithRetry(url, label) {
       lastError = error;
 
       if (attempt < retries) {
-        console.log(`${label} is not ready yet: ${error.message}. Retry ${attempt}/${retries}...`);
+        console.log(
+          `${label} is not ready yet: ${error.message}. Retry ${attempt}/${retries}...`
+        );
         await sleep(delayMs);
       }
     }
@@ -281,11 +324,16 @@ function extractSitemapEntries(xml) {
 function extractFeedPostUrls(xml) {
   const urls = new Set();
 
-  for (const match of xml.matchAll(/<link\b[^>]*href=["']([^"']+)["'][^>]*>/g)) {
+  for (const match of xml.matchAll(
+    /<link\b[^>]*href=["']([^"']+)["'][^>]*>/g
+  )) {
     const url = decodeXml(match[1].trim());
     const parsedUrl = parseUrl(url);
 
-    if (parsedUrl?.origin === new URL(siteUrl).origin && parsedUrl.pathname.includes("/posts/")) {
+    if (
+      parsedUrl?.origin === new URL(siteUrl).origin &&
+      parsedUrl.pathname.includes("/posts/")
+    ) {
       urls.add(normalizeUrl(parsedUrl.href));
     }
   }
@@ -309,7 +357,9 @@ function decodeXml(value) {
 }
 
 function extractTagContent(html, tagName) {
-  const match = html.match(new RegExp(`<${tagName}[^>]*>([\\s\\S]*?)<\\/${tagName}>`, "i"));
+  const match = html.match(
+    new RegExp(`<${tagName}[^>]*>([\\s\\S]*?)<\\/${tagName}>`, "i")
+  );
   return match ? stripHtml(match[1]).trim() : "";
 }
 
@@ -344,13 +394,20 @@ function extractLinkHref(html, rel) {
     "i"
   );
   const match = html.match(pattern) || html.match(reversePattern);
-  return match ? new URL(decodeHtmlAttribute(match[1]).trim(), siteUrl).href : "";
+  return match
+    ? new URL(decodeHtmlAttribute(match[1]).trim(), siteUrl).href
+    : "";
 }
 
 function hasNoindex(html) {
   const robots = extractMetaContent(html, "robots").toLowerCase();
   const googlebot = extractMetaContent(html, "googlebot").toLowerCase();
-  return [robots, googlebot].some((value) => value.split(",").map((part) => part.trim()).includes("noindex"));
+  return [robots, googlebot].some((value) =>
+    value
+      .split(",")
+      .map((part) => part.trim())
+      .includes("noindex")
+  );
 }
 
 function decodeHtmlAttribute(value) {
@@ -395,7 +452,10 @@ function defaultPostLimit(mode) {
 
 function formatList(values) {
   const visible = values.slice(0, maxSummaryItems);
-  const suffix = values.length > visible.length ? `, ... +${values.length - visible.length} more` : "";
+  const suffix =
+    values.length > visible.length
+      ? `, ... +${values.length - visible.length} more`
+      : "";
   return `${visible.join(", ")}${suffix}`;
 }
 
@@ -437,11 +497,21 @@ async function writeStepSummary(title) {
   ];
 
   if (warnings.length > 0) {
-    lines.push("### Warnings", "", ...warnings.map((warning) => `- ${warning}`), "");
+    lines.push(
+      "### Warnings",
+      "",
+      ...warnings.map((warning) => `- ${warning}`),
+      ""
+    );
   }
 
   if (failures.length > 0) {
-    lines.push("### Failures", "", ...failures.map((failure) => `- ${failure}`), "");
+    lines.push(
+      "### Failures",
+      "",
+      ...failures.map((failure) => `- ${failure}`),
+      ""
+    );
   }
 
   await appendFile(process.env.GITHUB_STEP_SUMMARY, lines.join("\n"));

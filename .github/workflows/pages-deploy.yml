@@ -81,6 +81,6 @@ jobs:
       - name: Verify indexing readiness
         run: node scripts/verify-indexing-readiness.mjs
         env:
-          SITE_URL: https://dafnelee.com
+          SITE_URL: https://info.dafnelee.com
           INDEXING_CHECK_RETRIES: 6
           INDEXING_CHECK_DELAY_MS: 10000
